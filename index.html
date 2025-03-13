@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar PDFs</title>
+  <style>
+        /* Estilos para el título h1 */
+        h1 {
+            color: #0D3744; /* Color de la letra */
+            font-size: 36px; /* Tamaño de la fuente */
+            text-align: center; /* Centrar el texto */
+            font-style: italic; /* Texto en cursiva */
+            font-family: Arial, sans-serif; /* Fuente opcional */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+
+        /* Estilos para el botón */
+        .mi-boton {
+            background-color: #4CAF50; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 15px 32px; /* Espaciado interno */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 16px; /* Tamaño de la fuente */
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+            transition: background-color 0.3s ease; /* Transición suave */
+        }
+
+        /* Cambia el color al pasar el mouse */
+        .mi-boton:hover {
+            background-color: #45a049;
+        }
+
+        /* Cambia el color al hacer clic */
+        .mi-boton:active {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
 <body>
-    <h1>Archivos PDF</h1>
-    <ul>
-        <li><a href="IUDPT-Dashboard.pdf" target="_blank">Ver PDF 1</a></li>
-        <li><a href="20250311_Detalle facturacion_Carreras.pdf" target="_blank">Ver PDF 2</a></li>
-    </ul>
+    <h1>Tablero IUDPT</h1>
+    <button class="mi-boton" onclick="window.open('IUDPT-Dashboard.pdf')">Dashboard</button>
+    <button class="mi-boton" onclick="window.open('20250311_Detalle facturacion_Carreras2.pdf')">Detalle</button>
 </body>
 </html>
